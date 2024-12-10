@@ -4,6 +4,14 @@
 
 {% block content %}
 
+<style>
+    select{
+    width: 50%; /* Ajusta al 50% del ancho disponible */
+    margin-bottom: 1rem; /* Espaciado debajo del campo */
+    padding: 0.5rem; /* Espaciado interno para un mejor aspecto */
+    box-sizing: border-box; /* Para que el padding no afecte el ancho */
+}
+</style>
 <h1>Edicíon de Venta</h1>
 
 <form action="{{url_for('venta.edit', id=venta.id)}}" method="POST">
@@ -41,6 +49,7 @@
 <!-- +++++ -->
 
     <button type="submit"  class="btn btn-primary">Actualizar Venta</button>
+    <a href="/ventas" class="btn btn-primary">volver</a>
 </form>
 
 {% endblock %}

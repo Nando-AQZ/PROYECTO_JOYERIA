@@ -3,8 +3,17 @@
 {% block title %} PRODUCTOS {% endblock %}
 
 {% block content %}
+<style>
+    body {
+            background-image: url("/static/img_login.jpg");
+    background-size: cover; /* Hace que la imagen cubra todo el fondo sin repetir */
+    background-position: center center; /* Centra la imagen en la pantalla */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-<h1>Lista de productos</h1>
+</style>
+<h1>Lista de Joyas </h1>
 <a href="{{url_for('producto.create')}}" class="btn btn-success mb-3">Nuevo</a>
 <table class="table table-striped">
     <tr>

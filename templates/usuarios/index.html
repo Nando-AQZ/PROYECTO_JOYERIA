@@ -3,8 +3,22 @@
 {% block title %} USUARIOS {% endblock %}
 
 {% block content %}
+<style>
+    body {
+            background-image: url("/static/img_login.jpg");
+    background-size: cover; /* Hace que la imagen cubra todo el fondo sin repetir */
+    background-position: center center; /* Centra la imagen en la pantalla */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column; 
+        }
+        footer{
+            margin-top: auto;
+        }
 
-<h1>Lista de Usuarios</h1>
+</style>
+<h1>Lista de Usuarios para la Joyeria Verónica</h1>
 <a href="{{url_for('usuario.create')}}" class="btn btn-success mb-3">Nuevo</a>
 <table class="table table-striped">
     <tr>
